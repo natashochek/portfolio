@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: Gothic;
+            src: url(fonts/gothic.ttf);
+        }
+        
+        body {
+            background: #26a69a;
+            padding: 0;
+            margin: 0;
+            font-family: Gothic;
+        }
+        
+        .main {
+            width: 98%;
+            margin: 1% auto;
+            height: 90%;
+            background: white;
+        }
+        
+        .ribbon {
+            width: 70px;
+            height: 130px;
+            float: left;
+            display: inline-block;
+        }
+        
+        .logo {
+            height: 130px;
+            width: 70%;
+            margin-left: 10px;
+            padding-top: 30px;
+            display: inline-block;
+            float: left;
+        }
+        
+        .header {
+            height: 130px;
+            margin-bottom: 20px;
+        }
+        
+        .header-small {
+            height: 5%;
+            width: 100%;
+            background: #26a69a;
+        }
+        
+        .main_btn {
+            height: 70%;
+            width: auto;
+            margin-left: 1%;
+            margin-top: 1%;
+        }
+        
+        .logo_main {
+            display: inline;
+        }
+        
+        .links {
+            display: inline-block;
+            padding-top: 20px;
+        }
+
+    </style>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header-small show-on-small hide-on-med-and-up">
+            <a href="#" data-target="slide-out" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
+            <h5 class="logo_main white-text">PORTFOLIO</h5>
+            <ul id="slide-out" class="sidenav">
+                <li><a href="index.html" class="black-text text-lighten-1">Главная</a></li>
+                <div class="divider"></div>
+                <li><a href="works.html" class="black-text text-lighten-1">Мои работы</a></li>
+                <li><a href="dost.html" class="black-text text-lighten-1">Достижения</a></li>
+                        <li><a href="https://github.com/natashochek">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="header hide-on-small-only">
+                <img src="img/ribbon.png" class="ribbon" alt="">
+                <div class="logo">
+                    <h5 class="black-text">Natasha Neobutova</h5>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html" class="black-text text-lighten-1">Главная</a></li>
+                        <li><a href="works.html" class="black-text text-lighten-1">Мои работы</a></li>
+                        <li><a href="dost.html" class="black-text text-lighten-1">Достижения</a></li>
+                        <li><a href="https://github.com/natashochek">GitHub</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="divider"></div>
+            <div class="hide-on-small-only">
+                <h3 class="black-text text-lighten-1">PORTFOLIO</h3>
+            </div>
+            <div class="row">
+                <div class="col s4 teal lighten-1">
+                    <p>Меня зовут Необутова Наташа, мне 15 лет. Я занимаюсь WEB-программированием в IT школе Алексея Илларионова и в этом году заканчиваю 2 курс. Учусь в 9 классе в МОБУ "Саха Гимназии". Помимо программирования в свободное время увлекаюсь пением, рисованием и писательством.</p>
+                </div>
+                <div class="col s8 row">
+                    <div class="col s12 teal lighten-2">
+                        <p>Больше всего мне нравится разработка мобильных игры и приложений, в том числе и написание серверной части.</p>
+                    </div>
+                    <div class="col s12 teal lighten-1">
+                        <h5>Общая оценка моих умений в программировании:</h5>
+                        <div class="row white">
+                            <div class="col s5 teal lighten-5"><p>HTML+CSS(+Materialize)</p></div>
+                            <div class="col s4 teal darken-3"><p>PHP + LARAVEL</p></div>
+                            <div class="col s3 teal lighten-2"><p>UNITY3D</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 teal lighten-1"><h5>Контакты</h5></div>
+                <div class="col s4 teal lighten-3"><p>Номер телефона: <a href="#" class="black-text">+79148219210</a></p></div>
+                <div class="col s8 teal lighten-4"><p>Почта: <a href="#" class="black-text">neobutovann@gmail.com</a></p></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function() {
+            $('.parallax').parallax();
+        });
+
+    </script>
+</body>
+
+</html>
