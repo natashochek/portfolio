@@ -2,171 +2,219 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<style>
-		@font-face {
-			font-family: Gothic;
-			src: url(fonts/gothic.ttf);
-		}
-		
-		body {
-			background: #26a69a;
-			padding: 0;
-			margin: 0;
-			font-family: Gothic;
-		}
-		
-		.main {
-			width: 98%;
-			margin: 1% auto;
-			height: 90%;
-			background: white;
-		}
-		
-		.ribbon {
-			width: 70px;
-			height: 130px;
-			float: left;
-			display: inline-block;
-		}
-		
-		.logo {
-			height: 130px;
-			width: 70%;
-			margin-left: 10px;
-			padding-top: 30px;
-			display: inline-block;
-			float: left;
-		}
-		
-		.header {
-			height: 130px;
-			margin-bottom: 20px;
-		}
-		
-		.header-small {
-			height: 5%;
-			width: 100%;
-			background: #26a69a;
-		}
-		
-		.main_btn {
-			height: 70%;
-			width: auto;
-			margin-left: 1%;
-			margin-top: 1%;
-		}
-		
-		.logo_main {
-			display: inline;
-		}
-		
-		.links {
-			display: inline-block;
-			padding-top: 20px;
-		}
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: Gothic;
+            src: url(fonts/gothic.ttf);
+        }
 
-	</style>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        body {
+            background: #26a69a;
+            padding: 0;
+            margin: 0;
+            font-family: Gothic;
+        }
+
+        .main {
+            width: 98%;
+            margin: 1% auto;
+            height: 98%;
+            background: white;
+        }
+
+        .ribbon {
+            width: 70px;
+            height: 130px;
+            float: left;
+            display: inline-block;
+        }
+
+        .logo {
+            height: 130px;
+            line-height: 130px;
+            width: 40%;
+            margin-left: 10px;
+            display: inline-block;
+            float: left;
+        }
+
+        .header {
+            height: 130px;
+            margin-bottom: 20px;
+        }
+
+        .header-small {
+            height: 5%;
+            width: 100%;
+            background: #26a69a;
+        }
+
+        .main_btn {
+            height: 70%;
+            width: auto;
+            margin-left: 1%;
+            margin-top: 1%;
+        }
+
+        .logo_main {
+            display: inline;
+        }
+
+        .links {
+            display: inline-block;
+            float: right;
+            margin-right: 20px;
+        }
+
+    </style>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-	<div class="main">
-		<div class="header-small show-on-small hide-on-med-and-up">
-			<a href="#" data-target="slide-out" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
-			<h5 class="logo_main white-text">PORTFOLIO</h5>
-			<ul id="slide-out" class="sidenav">
-				<li><a href="index.html" class="black-text text-lighten-1">Главная</a></li>
-				<div class="divider"></div>
-				<li><a href="works.html" class="black-text text-lighten-1">Мои работы</a></li>
-				<li><a href="dost.html" class="black-text text-lighten-1">Достижения</a></li>
-                        <li><a href="https://github.com/natashochek">GitHub</a></li>
-			</ul>
-		</div>
-		<div class="container">
-			<div class="header hide-on-small-only">
-				<img src="img/ribbon.png" class="ribbon" alt="">
-				<div class="logo">
-					<h5 class="black-text">Natasha Neobutova</h5>
-				</div>
-				<div class="links">
-					<ul>
-						<li><a href="index.html" class="black-text text-lighten-1">Главная</a></li>
-						<li><a href="works.html" class="black-text text-lighten-1">Мои работы</a></li>
-						<li><a href="dost.html" class="black-text text-lighten-1">Достижения</a></li>
-                        <li><a href="https://github.com/natashochek">GitHub</a></li>
-					</ul>
-				</div>
+    <div class="main z-depth-4">
+        <div class="header-small show-on-small hide-on-med-and-up text-lighten-2" style="height: 50px; line-height: 50px;">
+            <a href="#" data-target="slide-out" class="sidenav-trigger white-text left"><i class="material-icons" style="font-weight: 900; margin-top: 10px;">menu</i></a>
+            <h5 class="logo_main white-text" style="margin-left: 10px; font-weight: 800;">PORTFOLIO</h5>
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background" style="height: 150px; opacity: 0.6">
+                            <img src="img/backsidenav.png">
+                        </div>
+                        <a href="#name">
+                            <h3 class="teal-text text-lighten-2" style="font-weight: 900; text-shadow: black 0 0 10px;">Neobutova Natasha</h3>
+                        </a>
+                    </div>
+                </li>
+                <li><a href="index.html" class="black-text text-lighten-1">Главная</a></li>
+                <div class="divider"></div>
+                <li><a href="works.html" class="black-text text-lighten-1">Мои работы</a></li>
+                <li><a href="dost.html" class="black-text text-lighten-1">Достижения</a></li>
+                <div class="divider"></div>
+                <li>
+                    <div class="overflow" style="text-align: center; margin-top: 20px;"><a href="https://vk.com/nneobutova"><img src="https://png.icons8.com/metro/26/4db6ac/vk-com.png"></a>
+                        <a href="https://www.instagram.com/_nata_shochek_/"><img src="https://png.icons8.com/ios-glyphs/26/4db6ac/instagram-new.png"></a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=16430c459900c051"><img src="https://png.icons8.com/ios-glyphs/26/4db6ac/gmail.png"></a>
+                        <a href="https://github.com/natashochek"><img src="https://png.icons8.com/ios-glyphs/26/4db6ac/github.png"></a></div>
+                </li>
+            </ul>
+        </div>
 
-			</div>
+        <div class="container">
+            <div class="header hide-on-small-only">
+                <img src="img/ribbon.png" class="ribbon" alt="">
+                <div class="logo">
+                    <h4 class="black-text">Natasha Neobutova</h4>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html" class="black-text text-lighten-1">Главная</a></li>
+                        <li><a href="works.html" class="black-text text-lighten-1">Мои работы</a></li>
+                        <li><a href="dost.html" class="black-text text-lighten-1">Достижения</a></li>
+                    </ul>
+                    <a href="https://vk.com/nneobutova" class="tooltipped" data-position="left" data-tooltip="Мой аккаунт Вконтакте"><img src="https://png.icons8.com/metro/26/CCCCCC/vk-com.png"></a>
+                    <a href="https://www.instagram.com/_nata_shochek_/" class="tooltipped" data-position="left" data-tooltip="Мой Instagram"><img src="https://png.icons8.com/ios-glyphs/26/cccccc/instagram-new.png"></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=16430c459900c051" class="tooltipped" data-position="left" data-tooltip="Написать мне"><img src="https://png.icons8.com/ios-glyphs/26/cccccc/gmail.png"></a>
+                    <a href="https://github.com/natashochek" class="tooltipped" data-position="left" data-tooltip="Мой аккаунт в Github"><img src="https://png.icons8.com/ios-glyphs/26/cccccc/github.png"></a>
+                </div>
+
+            </div>
 
 
-			<div class="divider"></div>
-			<div class="hide-on-small-only">
-				<h3 class="black-text text-lighten-1">PORTFOLIO</h3>
-			</div>
-			<ul class="tabs tabs-fixed-width">
-				<li class="tab"><a class="black-text" href="#test1">Phaser</a></li>
-				<li class="tab"><a class="active black-text" href="#test2">Laravel</a></li>
-			</ul>
-			<div class="">
-				<div id="test1">
-					<div class="slider">
-						<ul class="slides">
-							<li>
-								<img src="img/phaser.png">
-								<div class="caption center-align">
-									<h3>Игра "Grammy 2017"</h3>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<p>Данная игра основана на мотивах "Grammy 2017". Я хотела очень простую игру, в которой игроки играют за Эда Ширана и ловят падающие ноты. На протяжении разработки игры я столкнулась с некоторыми проблемами, например, я должна была нарисовать пиксельного Эда и анимировать его. Я надеюсь, чтто справилась с этой задачей, так как это был мой первый опыт разработки игры в Phaser и рисования пиксельного персонажа.</p>
-				</div>
-				<div id="test2">
-					<div class="slider">
-						<ul class="slides">
-							<li>
-								<img src="img/abit1.png" style="background-size:100% 100%">
-							</li>
-							<li><img src="img/abit2.png">
-							</li>
-							<li><img src="img/abit3.png">
-							</li>
-							<li><img src="img/abit4.png">
-							</li>
-							<li><img src="img/abit5.png">
-							</li>
-							<li><img src="img/abit6.png">
-							</li>
-							<li><img src="img/abit7.png">
-							</li>
-							<li><img src="img/abit8.png">
-							</li>
-						</ul>
-					</div>
-                    <a href="https://github.com/natashochek/abiturientu.ru" target="_blank" class="black-text"><h5>Ссылка на GitHub</h5></a>
-					<p>Идея создания данного сайта появилась когда я задумалась о своём будущем. Я подумала, что мне было бы неудобно искать информацию про гранты, университеты, конкурсы, поэтому я решила разместить всю эту информацию на одном сайте "Абитуриенту.ру". Перед вами прототип данного сайта. При разработке данного сайта использован front-end framework Materialize, созданный компанией Google и framework Laravel для PHP, так как писать данный сайт на чистом PHP мне было бы трудно и неудобно.</p>
-				</div>
-		</div>
-	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('.sidenav').sidenav();
-		});
-		$(document).ready(function() {
-			$('.tabs').tabs();
-		});
-		$(document).ready(function() {
-			$('.slider').slider();
-		});
+            <div class="divider"></div>
+            <div class="hide-on-small-only">
+                <h3 class="black-text text-lighten-1">PORTFOLIO</h3>
+            </div>
+            <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a class="black-text" href="#test1">Phaser</a></li>
+                <li class="tab"><a class="active black-text" href="#test2">Laravel</a></li>
+            </ul>
+            <div class="">
+                <div id="test1">
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="img/phaser.png">
+                                <div class="caption center-align">
+                                    <h3>Игра "Grammy 2017"</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/grammy2.jpeg">
+                                <div class="caption center-align">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Данная игра основана на мотивах "Grammy 2017". Я хотела очень простую игру, в 1 уровне которой игроки играют за Эда Ширана и ловят падающие ноты. На протяжении разработки игры я столкнулась с некоторыми проблемами, например, я должна была нарисовать пиксельного Эда и анимировать его. Я надеюсь, что справилась с этой задачей, так как это был мой первый опыт разработки игры в Phaser и рисования пиксельного персонажа. На 2 уровне вам предлагается пройти пазл и собрать полную картинку.</p>
+                </div>
+                <div id="test2">
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="img/abit1.png" style="background-size:100% 100%">
+                            </li>
+                            <li><img src="img/abit2.png" style="background-size:100% 100%">
+                            </li>
+                            <li><img src="img/abit3.png" style="background-size:100% 100%">
+                            </li>
+                            <li><img src="img/abit4.png" style="background-size:100% 100%">
+                            </li>
+                            <li><img src="img/abit5.png" style="background-size:100% 100%">
+                            </li>
+                            <li><img src="img/abit6.png" style="background-size:100% 100%">
+                            </li>
+                            <li><img src="img/abit7.png" style="background-size:100% 100%">
+                            </li>
+                            <li><img src="img/abit8.png" style="background-size:100% 100%">
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/natashochek/abiturientu.ru" target="_blank" class="black-text">
+                        <h5>Ссылка на GitHub</h5>
+                    </a>
+                    <p>Идея создания данного сайта появилась когда я задумалась о своём будущем. Я подумала, что мне было бы неудобно искать информацию про гранты, университеты, конкурсы, поэтому я решила разместить всю эту информацию на одном сайте "Абитуриенту.ру". Перед вами прототип данного сайта. При разработке данного сайта использован front-end framework Materialize, созданный компанией Google и framework Laravel для PHP, так как писать данный сайт на чистом PHP мне было бы трудно и неудобно.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 teal lighten-1">
+                    <h5>Контакты</h5>
+                </div>
+                <div class="col s4 teal lighten-3" style="height:75px;  text-align: center">
+                    <p>Номер телефона: <a href="#" class="black-text">+79148219210</a></p>
+                </div>
+                <div class="col s8 teal lighten-4" style="height:75px;  text-align: center">
+                    <p>Почта: <a href="#" class="black-text">neobutovann@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
 
-	</script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function() {
+            $('.parallax').parallax();
+        });
+        $(document).ready(function() {
+            $('.tooltipped').tooltip();
+        });
+
+        $(document).ready(function() {
+            $('.tabs').tabs();
+        });
+        $(document).ready(function() {
+            $('.slider').slider();
+        });
+
+    </script>
 </body>
 
 </html>
